@@ -55,6 +55,7 @@ body {
   font-weight: var(--font-medium);
   background-color: var(--body-color);
   color: var(--text-color);
+
 }
 
 ul {
@@ -274,6 +275,25 @@ img {
   top: -1.25rem;
 }
 
+.home__cloud1,
+.home__cloud2 {
+  position: absolute;
+  bottom: 0;
+  max-width: initial;
+}
+
+.home__cloud2 {
+  width: 500px;
+  right: -4rem;
+}
+
+.home__cloud1 {
+  width: 700px;
+  right: -6rem;
+}
+
+
+
 
 
 /*=============== BREAKPOINTS ===============*/
@@ -287,3 +307,20 @@ img {
 
 
 /* For large devices */
+@media screen and (main-width: 1023px) {
+  .nav {
+    height: calc(var(--header-height) + 2rem);
+  }
+
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+
+  .nav__menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 4.5rem;
+  }
+}
